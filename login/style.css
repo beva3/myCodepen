@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(50, 48, 48);
+}
+.login-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+
+    width: 400px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.6);
+    border-radius: 10px;
+}
+.login-box h2{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.login-box .user-box input{
+    width: 100%;
+    padding: 10px 0;
+    background: transparent;
+    outline: none ;
+    border: none;
+    border-bottom: 1px solid white;
+    margin-bottom: 30px;
+    color: white;
+}
+.login-box .user-box label{
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: white;
+}
