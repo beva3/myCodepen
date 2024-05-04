@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>displa div</title>
+    <style>
+        html,body,.container{
+            margin:0;
+            padding:0;
+            height:100vh;
+        }
+          
+        .container{
+            display:grid;
+            place-items:center;
+        }
+          
+        .test-container{
+            display:grid;
+            grid-template-columns: repeat(2,280px);
+            grid-template-rows: repeat(2,280px);
+            place-items:center;
+        }
+          
+        .test-1{
+            display:flex;
+            height:272px;
+            border-radius:24px;
+            width:272px;
+            background:#141414;
+            background-repeat:repeat;
+            background-size:3.55%;
+            overflow:hidden;
+        }
+          
+        .test-1:after{
+            content:"";
+            height:272px;
+            width:272px;
+            background-image:url(https://i.gyazo.com/24039739653573aa4d270d3a5669f9e0.png);
+            mix-blend-mode:soft-light;
+            opacity:24%;
+        }
+          
+        .test-2{
+            display:flex;
+            height:272px;
+            border-radius:24px;
+            width:272px;
+            background:#EF3E72;
+            background-repeat:repeat;
+            overflow:hidden;
+        }
+          
+        .test-2:after{
+            content:"";
+            height:272px;
+            width:272px;
+            background-image:url(https://i.gyazo.com/5a16f78991635677835254da8433147a.png);
+            opacity:48%;
+        }
+          
+        .test-3{
+            display:grid;
+            place-items:center;
+            height:272px;
+            border-radius:24px;
+            width:272px;
+            background:#37ADDF;
+            background-repeat:repeat;
+            overflow:hidden;
+        }
+          
+        .test-3:after{
+            content:"";
+            height:272px;
+            width:272px;
+            background-image:url(https://i.gyazo.com/06d13776d8d6c0a20c29ca337c250cc0.png);
+            opacity:24%;
+        }
+          
+        .test-4{
+            display:grid;
+            place-items:center;
+            height:272px;
+            border-radius:24px;
+            width:272px;
+            background:#141414;
+            background-repeat:repeat;
+            overflow:hidden;
+        }
+          
+        .test-4:after{
+            content:"";
+            height:272px;
+            width:272px;
+            background-image:url(https://i.gyazo.com/f5e4dbd81ba49d80898ab198c514689a.png);
+            opacity:24%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="test-container">
+          <div class="test-1"></div>
+          <div class="test-2"></div>
+          <div class="test-3"></div>
+          <div class="test-4"></div>
+        </div>
+      </div>
+</body>
+</html>
